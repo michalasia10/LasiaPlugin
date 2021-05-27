@@ -1,10 +1,10 @@
 [general]
 name=LasiaPlugin
-description= opis o naszej wtyczce
-about= o naszej wtyczce cos tam i auto to ja Michał
+description= Wtyczka utworzona na potrzeby zajęć PwSGIS
+about= Wtyczka odpowiadająca za obliczenia 3 statystyk ( suma powierzchni, średnia, odchylenie standardowe ) \n wybranych obiektów na warstwie wektorowej o rozszerzeniu *.shp
 version=1.0
 qgisMinimumVersion=3.0
 author=Michał Lasia
 email=Metoda odpowiada za wyświetlenie wykresów
-repository=URL
+repository=https://github.com/michalasia10/LasiaPlugin
 icon=icon.png
