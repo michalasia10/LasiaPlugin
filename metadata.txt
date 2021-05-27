@@ -1,7 +1,7 @@
 [general]
 name=LasiaPlugin
 description= Wtyczka utworzona na potrzeby zajęć PwSGIS
-about= Wtyczka odpowiadająca za obliczenia 3 statystyk ( suma powierzchni, średnia, odchylenie standardowe ) \n wybranych obiektów na warstwie wektorowej o rozszerzeniu *.shp
+about= Wtyczka odpowiadająca za obliczenia 3 statystyk ( suma powierzchni, średnia, odchylenie standardowe ) wybranych obiektów na warstwie wektorowej o rozszerzeniu *.shp.Plugin pozwala również obliczyć liczbe obiektów oraz zobrazować obliczone statystyki.
 version=1.0
 qgisMinimumVersion=3.0
 author=Michał Lasia
