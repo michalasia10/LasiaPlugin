@@ -1,0 +1,10 @@
+[general]
+name=LasiaPlugin
+description= opis o naszej wtyczce
+about= o naszej wtyczce cos tam i auto to ja Michał
+version=1.0
+qgisMinimumVersion=3.0
+author=Michał Lasia
+email=Metoda odpowiada za wyświetlenie wykresów
+repository=URL
+icon=icon.png
