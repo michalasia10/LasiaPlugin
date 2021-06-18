@@ -30,7 +30,6 @@ CONVERT_UNITS = UNITS_JSON["convert_units"]
 with importlib.resources.path("LasiaPlugin", "iconPlugin.png") as data_path:
     icon_path = str(data_path.absolute())
 
-
 class LasiaPlugin:
     """
     PL: Klasa reprezentuje plugin o nazwie LasiaPlugin.
@@ -219,8 +218,7 @@ class LasiaPlugin:
         form = self.form
         unitName: str = form.comboBox.currentText()
         labels: list = [form.label_5, form.label_6, form.label_7]
-        for label in labels:
-            label.setText(unitName)
+        self._set_text_for_list(labels,unitName)
         unit: str = UNITS[unitName]
         features = [obiekt for obiekt in layer.selectedFeatures()]
         area = QgsDistanceArea()
@@ -264,8 +262,8 @@ class LasiaPlugin:
         valuesInText = [form.lineEdit_2, form.lineEdit_3, form.lineEdit_4]
         self.form.graphicsView.scene().clear()
         self._active_widgets(False)
-        for value in valuesInText:
-            value.setText("")
+        self._set_text_for_list(valuesInText, "")
+
 
     def _refresh_lineEdits(self)->None:
         """
@@ -278,13 +276,17 @@ class LasiaPlugin:
         self._refresh_area_values()
         if self._unit != self.form.label_5.text():
             labels: list = [form.label_5, form.label_6, form.label_7]
-            for label in labels:
-                label.setText(self._unit)
+            self._set_text_for_list(labels, self._unit)
             valuesInText: list = [form.lineEdit_2, form.lineEdit_3, form.lineEdit_4]
-            Values: list = [self._sumArea, self._mean, self._sigmoid]
+            values: list = [self._sumArea, self._mean, self._sigmoid]
             for idx, text in enumerate(valuesInText):
-                newValue = Values[idx]
+                newValue = values[idx]
                 text.setText(f"{round(newValue, 5)}")
+
+
+    def _set_text_for_list(self,lines:list,text:str):
+        for line in lines:
+            line.setText(text)
 
     def _refresh_area_values(self)->None:
         """
