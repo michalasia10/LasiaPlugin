@@ -285,6 +285,10 @@ class LasiaPlugin:
 
 
     def _set_text_for_list(self,lines:list,text:str):
+        """
+        Metoda zmiena tekst dla podanych labeli
+     
+        """
         for line in lines:
             line.setText(text)
 
