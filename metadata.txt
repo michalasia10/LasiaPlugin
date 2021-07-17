@@ -1,10 +1,10 @@
 [general]
-name=LasiaPlugin
-description= Wtyczka utworzona na potrzeby zajęć PwSGIS
-about= Wtyczka odpowiadająca za obliczenia 3 statystyk ( suma powierzchni, średnia, odchylenie standardowe ) wybranych obiektów na warstwie wektorowej o rozszerzeniu *.shp.Plugin pozwala również obliczyć liczbe obiektów oraz zobrazować obliczone statystyki.
-version=1.0
+name=FieldClassifier
+description= Plugin made by Lasia to use for M. Mulski
+about= Plugin used for classified fields.
+version= Beta 1.0
 qgisMinimumVersion=3.0
 author=Michał Lasia
-email=Metoda odpowiada za wyświetlenie wykresów
-repository=https://github.com/michalasia10/LasiaPlugin
+email= michal.lasia3@gmail.com
+repository= github
 icon=icon.png
