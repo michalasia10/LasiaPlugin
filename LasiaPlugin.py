@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 import json
 import importlib.resources
 
+
 # load json
 with importlib.resources.path("LasiaPlugin", "units.json") as data_path:
     with open(data_path) as f:

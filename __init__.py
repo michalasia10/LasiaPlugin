@@ -6,5 +6,6 @@ from  qgis.gui import *
 from qgis.utils import *
 from .LasiaPlugin import LasiaPlugin
 
+
 def classFactory(iface):
     return LasiaPlugin(iface)
