@@ -61,22 +61,6 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_4">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>180</x>
-       <y>170</y>
-       <width>91</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
     <widget class="QLabel" name="label">
      <property name="enabled">
       <bool>false</bool>
@@ -107,22 +91,6 @@
      </property>
      <property name="text">
       <string>Średnia</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>50</x>
-       <y>170</y>
-       <width>121</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Odchylenie standardowe</string>
      </property>
     </widget>
     <widget class="Line" name="line">
@@ -256,22 +224,6 @@
       <string>m2</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>290</x>
-       <y>170</y>
-       <width>21</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>m2</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButton_3">
      <property name="enabled">
       <bool>false</bool>
@@ -301,39 +253,6 @@
       </rect>
      </property>
     </widget>
-    <widget class="QComboBox" name="comboBox_2">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>210</y>
-       <width>101</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <item>
-      <property name="text">
-       <string>średnią</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>odchyleniem</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>wszystkim</string>
-      </property>
-     </item>
-    </widget>
     <widget class="Line" name="line_5">
      <property name="geometry">
       <rect>
@@ -355,17 +274,17 @@
       <rect>
        <x>20</x>
        <y>200</y>
-       <width>131</width>
+       <width>441</width>
        <height>41</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>8</pointsize>
+       <pointsize>11</pointsize>
       </font>
      </property>
      <property name="text">
-      <string>Wykres dla różnicy między </string>
+      <string>Wykres % udziału klasy w łącznej sumie powierzchni zaznaczonych obiektów</string>
      </property>
      <property name="textFormat">
       <enum>Qt::AutoText</enum>
@@ -482,7 +401,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>390</x>
+       <x>510</x>
        <y>210</y>
        <width>75</width>
        <height>23</height>
@@ -490,33 +409,6 @@
      </property>
      <property name="text">
       <string>Rysuj</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_10">
-     <property name="enabled">
-      <bool>false</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>260</x>
-       <y>200</y>
-       <width>121</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>8</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string> a wybranymi obiektami</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::AutoText</enum>
-     </property>
-     <property name="scaledContents">
-      <bool>false</bool>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_5">
@@ -607,6 +499,43 @@
      </property>
      <property name="orientation">
       <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>170</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Liczba unikatowych klas</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>169</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>
