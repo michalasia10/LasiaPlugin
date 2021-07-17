@@ -8,4 +8,3 @@ from .LasiaPlugin import LasiaPlugin
 
 def classFactory(iface):
     return LasiaPlugin(iface)
-
